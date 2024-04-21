@@ -1,30 +1,28 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
-                <div className="container-fluid">
-                    <Link className="navbar-brand" href="/"><i class="bi bi-exclude"></i> SAILENDRA</Link>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" href="#">Home</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" href="#project-section">Projects</Link>
-                            </li>
-                        </ul>
-                        <div className='mx-4'>
-                        <Link className='btn btn-outline-dark mx-2'> <i className="bi bi-github"></i> Github</Link>
-                        </div>
-                    </div>
+            <header>
+                <div class="logo">
+                    <Link to="/"> <img src={logo} alt='Logo' class='text-logo' />ILENDRA </Link>
                 </div>
-            </nav>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><Link to="mailto:sailendra9083@gmail.com" class="active">Email</Link></li>
+                        <li><Link to="#projects">Projects</Link></li>
+                        <li><Link to="https://www.linkedin.com/in/sailendrachettri/">LinkedIn</Link></li>
+                        <li><Link to="https://twitter.com/sailendrz">Twitter</Link></li>
+                    </ul>
+                </nav>
+            </header>
         </>
     )
 }

@@ -1,0 +1,191 @@
+import React from 'react'
+import img1 from '../../assets/projectImages/img1.jpg'
+import img2 from '../../assets/projectImages/img2.jpg'
+import img3 from '../../assets/projectImages/img3.jpg'
+import img4 from '../../assets/projectImages/img4.jpg'
+import img5 from '../../assets/projectImages/img5.jpg'
+import img6 from '../../assets/projectImages/img6.jpg'
+import img7 from '../../assets/projectImages/img7.jpg'
+import img8 from '../../assets/projectImages/img8.jpg'
+import img9 from '../../assets/projectImages/img9.jpg'
+import img10 from '../../assets/projectImages/img10.jpg'
+
+const Projects = () => {
+    return (
+        <>
+            <div class="projects" id="projects">
+                <h3>Recent Projects Collection</h3>
+                <p class="para">Everything I build or worked on as of now</p>
+
+                <div class="project-container">
+                    <div class="project-box">
+                        <img src={img10} alt="Learn LLms" />
+                            <h4 class="project-title">Learn LLMs</h4>
+                            <p class="project-description">A platform for those who is seeking the resources to learn large
+                                language
+                                models. And read about the latest technologies emerging in the industry.</p>
+
+                            <div class="btn-and-update">
+                                <a href="https://learnllm.onrender.com/" target="_blank" class="viwe-project-btn">
+                                    <button>See Dome</button>
+                                </a>
+
+                                <p>Last updated: <span id="project-learnllms"></span></p>
+                            </div>
+                    </div>
+
+                    <div class="project-box">
+                        <img src={img9} alt="General knowledge" />
+                            <h4 class="project-title">Gangtok Travellers - A tourse and traverls website to book a tour across
+                                sikkim</h4>
+                            <p class="project-description">The application is designed for individuals seeking a hassle-free
+                                travel experience in Sikkim. It's the perfect platform to book your destination in the beautiful
+                                region of Sikkim.</p>
+
+                            <div class="btn-and-update">
+                                <a href="https://gtravellers.onrender.com/" target="_blank" class="viwe-project-btn">
+                                    <button>See Dome</button>
+                                </a>
+                                <p>Last updated: <span id="project-gangtok-travellers"></span></p>
+                            </div>
+                    </div>
+
+                    <div class="project-box">
+                        <img src={img2} alt="General knowledge" />
+                            <h4 class="project-title">GK Site - Learn something new each day</h4>
+                            <p class="project-description">The main objective of this application is to provide the user about
+                                recent current affairs,
+                                history and lastest information.</p>
+
+                            <div class="btn-and-update">
+                                <a href="https://gk-site.netlify.app/" target="_blank" class="viwe-project-btn">
+                                    <button>See Dome</button>
+                                </a>
+
+                                <p>Last updated: <span id="project-gk-site"></span></p>
+                            </div>
+                    </div>
+
+                    <div class="project-box">
+                        <img src={img8} alt="Text-helper" />
+                            <h4 class="project-title">Text Analyzer - Analyze your text for free</h4>
+                            <p class="project-description">Text Analyzer helps the user to extract emails, convert to
+                                upper-lower cases, remove extra
+                                spaces, count the number of alphabets and words, etc.</p>
+                            <div class="btn-and-update">
+                                <a href="https://tanalyzer-site.netlify.app/" target="_blank" class="viwe-project-btn">
+                                    <button>See Dome</button>
+                                </a>
+
+                                <p>Last updated: <span id="project-text-analyzer"></span></p>
+                            </div>
+                    </div>
+
+                    <div class="project-box">
+                        <img src={img7} alt="checklist todo" />
+                            <h4 class="project-title">Checklist - Todo list for productivity</h4>
+                            <p class="project-description">By keeping checklist, you make sure that your tasks are written down
+                                all in one place so you
+                                don't forget anything important.</p>
+
+                            <div class="btn-and-update">
+                                <a href="https://checklist-site.netlify.app/" target="_blank" class="viwe-project-btn">
+                                    <button>See Dome</button>
+                                </a>
+
+
+                                <p>Last updated: <span id="project-checklist"></span></p>
+                            </div>
+                    </div>
+
+                    <div class="project-box">
+                        <img src={img6} alt="NBBGC FORCASTING" />
+                            <h4 class="project-title">NBBGC Forcasting - Get all wheater information</h4>
+                            <p class="project-description">The weather application will provide users with real-time weather
+                                information, forecasts, and
+                                other weather-related data, which can help them make better decisions about their day-to-day
+                                activities.</p>
+
+                            <div class="btn-and-update">
+                                <a href="https://nbbgc-forcasting.netlify.app/" target="_blank" class="viwe-project-btn">
+                                    <button>See Dome</button>
+                                </a>
+
+
+                                <p>Last updated: <span id="project-nbbgc-forcasting"></span></p>
+                            </div>
+                    </div>
+
+                    <div class="project-box">
+                        <img src={img5} alt="Laugh dude" />
+                            <h4 class="project-title">Laugh dude - Make me laugh by telling a joke</h4>
+                            <p class="project-description">A simple jokes telling website that tells a jokes in every 10
+                                seconds. All the jokes you get is
+                                all from api. None of the hardcoded by the developer.</p>
+
+                            <div class="btn-and-update">
+                                <a href="https://laughdude.netlify.app/" target="_blank" class="viwe-project-btn">
+                                    <button>See Dome</button>
+                                </a>
+
+
+                                <p>Last updated: <span id="project-laugh-dude"></span></p>
+                            </div>
+                    </div>
+
+                    <div class="project-box">
+                        <img src={img4} alt="Encryasmi" />
+                            <h4 class="project-title">Encryasmi - A text encryption and Decryption</h4>
+                            <p class="project-description">The main objective of this application is to prevent unauthorized
+                                users from being able to
+                                access, view, and understand sensitive information.</p>
+
+                            <div class="btn-and-update">
+                                <a href="https://encryasmi.netlify.app/" target="_blank" class="viwe-project-btn">
+                                    <button>See Dome</button>
+                                </a>
+
+
+                                <p>Last updated: <span id="project-encryasmi"></span></p>
+                            </div>
+                    </div>
+
+                    <div class="project-box">
+                        <img src={img3} alt="Aphna news" />
+                            <h4 class="project-title">Alphanews - Get the latest news everyday</h4>
+                            <p class="project-description">The main focus of this application is to connect news articles from
+                                all around the world and
+                                deliver them to users as fast as possible in the best visualize way</p>
+
+                            <div class="btn-and-update">
+                                <a href={img2} target="_blank" class="viwe-project-btn">
+                                    <button>See Dome</button>
+                                </a>
+
+
+                                <p>Last updated: <span id="project-alphanews"></span></p>
+                            </div>
+                    </div>
+
+                    <div class="project-box">
+                        <img src={img1} alt="Toy Project" />
+                            <h4 class="project-title">WinOverCrush - A simple toy program for Feb 2024</h4>
+                            <p class="project-description">WinOverCrush a simple program that doesn't lets u say NO so that you
+                                win over your crush.</p>
+
+                            <div class="btn-and-update">
+                                <a href="https://win-over-crush.netlify.app/" target="_blank" class="viwe-project-btn">
+                                    <button>See Dome</button>
+                                </a>
+
+
+                                <p>Last updated: <span id="project-win-over-crush"></span></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Projects
