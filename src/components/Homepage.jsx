@@ -7,6 +7,7 @@ import Services from './pages/Services'
 import Projects from './pages/Projects'
 import Design from './pages/Design'
 import Footer from './pages/Footer'
+import Carousel from './pages/Carousel'
 
 const Homepage = () => {
     return (
@@ -19,6 +20,7 @@ const Homepage = () => {
                     <Techstack />
                     <Projects />
                     <Services />
+                    <Carousel />
                     <Design />
                 </main>
                 <Footer />

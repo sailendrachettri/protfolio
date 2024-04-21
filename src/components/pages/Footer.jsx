@@ -17,7 +17,7 @@ const Footer = () => {
             <footer>
                 <div className='logo'>SAILENDRA CHETTRI</div>
                 <p>Living, learning, & leveling up one day at a time.</p>
-                <div class="icons">
+                <div className="icons">
                     <Link to="https://twitter.com/sailendrz" target="_blank"><img src={twitterlogo}
                         alt="Twitter" /></Link>
                     <Link to="https://www.instagram.com/01_sailendra" target="_blank"><img src={instalogo}
@@ -29,8 +29,8 @@ const Footer = () => {
                     <Link to=" https://wa.me/9832795894?text=Hi%20I%20Saw%20Your%20Portfolio!" target="_blank"><img
                         src={whatsapplogo} alt="whatsapp" /></Link>
                 </div>
-                <div class="copyright">
-                    Copyright &copy; <span class="year">{year}</span>. All rights reserved.
+                <div className="copyright">
+                    Copyright &copy; <span className="year">{year}</span>. All rights reserved.
                 </div>
             </footer>
         </>

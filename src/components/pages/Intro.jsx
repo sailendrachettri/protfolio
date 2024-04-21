@@ -3,7 +3,7 @@ import React from 'react'
 const Intro = () => {
     return (
         <>
-            <div class="intro">
+            <div className="intro">
                 <h3>Hi, I'm Sailendra Chettri</h3>
                 <p>I embarked on my coding journey in 2020, despite being a computer application student, much of my
                     knowledge has been self-acquired, and along the way, I've crafted diverse web applications, including

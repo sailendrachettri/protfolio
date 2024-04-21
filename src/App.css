@@ -531,7 +531,57 @@ header{
       margin: 0.9rem;
   }
 }
+
 /* -------------------------------MAIN STYLE ENDED------------------------------- */
+
+/* -----------------------------CAROUSEL STYLE STARTED-----------------------------  */
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.carousel-container h1{
+  margin: 1rem 0;
+}
+
+.carousel-slide {
+  display: none;
+}
+
+.carousel-slide img {
+  max-height: 350px;
+  object-fit:contain;
+  border-radius: 5px;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+/* Custom styling */
+.carousel-slide {
+  animation: fadeInOut 1s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-slide img{
+    width: 90%;
+  }
+}
+
+/* -----------------------------CAROUSEL STYLE ENDED-----------------------------  */
 /* -------------------------------FOOTER STYLE STARTED------------------------------- */
 footer {
   padding: 2rem 0;
