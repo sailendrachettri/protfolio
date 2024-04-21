@@ -13,12 +13,14 @@ const Homepage = () => {
         <>
             <div className='bg-color'>
                 <Navbar />
-                <Landingpage />
-                <Intro />
-                <Techstack />
-                <Projects />
-                <Services />
-                <Design />
+                <main>
+                    <Landingpage />
+                    <Intro />
+                    <Techstack />
+                    <Projects />
+                    <Services />
+                    <Design />
+                </main>
                 <Footer />
             </div>
         </>

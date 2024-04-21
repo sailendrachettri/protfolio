@@ -9,10 +9,13 @@ import whatsapplogo from '../../assets/social/whatsapp.png';
 import twitterlogo from '../../assets/social/twitter.png';
 
 const Footer = () => {
+    let date = new Date();
+    let year = date.getFullYear();
+    
     return (
         <>
             <footer>
-                <div>SAILENDRA</div>
+                <div className='logo'>SAILENDRA CHETTRI</div>
                 <p>Living, learning, & leveling up one day at a time.</p>
                 <div class="icons">
                     <Link to="https://twitter.com/sailendrz" target="_blank"><img src={twitterlogo}
@@ -27,7 +30,7 @@ const Footer = () => {
                         src={whatsapplogo} alt="whatsapp" /></Link>
                 </div>
                 <div class="copyright">
-                    Copyright &copy; <span class="year">0000</span>. All rights reserved.
+                    Copyright &copy; <span class="year">{year}</span>. All rights reserved.
                 </div>
             </footer>
         </>

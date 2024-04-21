@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 import design1 from '../../assets/graphics/design1.png'
 import design2 from '../../assets/graphics/design2.png'
@@ -9,7 +10,7 @@ const Design = () => {
     return (
         <>
             <div class="design-section">
-                <h3>My Recent Logo designs</h3>
+                <h3>Recent Logo Designs</h3>
                 <p>Collection of design and graphics</p>
 
                 <div class="designs">
@@ -20,7 +21,7 @@ const Design = () => {
                 </div>
 
                 <div class="large-button">
-                    <a href="./pages/graphics.html"><button>See More Designs &#x21e2;</button></a>
+                    <Link to="/grpahics"><button>See More Designs &#x21e2;</button></Link>
                 </div>
             </div>
         </>
