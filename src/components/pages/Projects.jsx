@@ -32,8 +32,6 @@ const Projects = () => {
                                 <Link to="https://learnllm.onrender.com/" target="_blank" className="viwe-project-btn">
                                     <button>See Dome</button>
                                 </Link>
-
-                                <p>Last updated: <span id="project-learnllms"></span></p>
                             </div>
                     </div>
 
@@ -49,7 +47,6 @@ const Projects = () => {
                                 <Link to="https://gtravellers.onrender.com/" target="_blank" className="viwe-project-btn">
                                     <button>See Dome</button>
                                 </Link>
-                                <p>Last updated: <span id="project-gangtok-travellers"></span></p>
                             </div>
                     </div>
 
@@ -64,8 +61,6 @@ const Projects = () => {
                                 <Link to="https://gk-site.netlify.app/" target="_blank" className="viwe-project-btn">
                                     <button>See Dome</button>
                                 </Link>
-
-                                <p>Last updated: <span id="project-gk-site"></span></p>
                             </div>
                     </div>
 
@@ -79,8 +74,6 @@ const Projects = () => {
                                 <Link to="https://tanalyzer-site.netlify.app/" target="_blank" className="viwe-project-btn">
                                     <button>See Dome</button>
                                 </Link>
-
-                                <p>Last updated: <span id="project-text-analyzer"></span></p>
                             </div>
                     </div>
 
@@ -95,9 +88,6 @@ const Projects = () => {
                                 <Link to="https://checklist-site.netlify.app/" target="_blank" className="viwe-project-btn">
                                     <button>See Dome</button>
                                 </Link>
-
-
-                                <p>Last updated: <span id="project-checklist"></span></p>
                             </div>
                     </div>
 
@@ -113,9 +103,6 @@ const Projects = () => {
                                 <Link to="https://nbbgc-forcasting.netlify.app/" target="_blank" className="viwe-project-btn">
                                     <button>See Dome</button>
                                 </Link>
-
-
-                                <p>Last updated: <span id="project-nbbgc-forcasting"></span></p>
                             </div>
                     </div>
 
@@ -130,9 +117,6 @@ const Projects = () => {
                                 <Link to="https://laughdude.netlify.app/" target="_blank" className="viwe-project-btn">
                                     <button>See Dome</button>
                                 </Link>
-
-
-                                <p>Last updated: <span id="project-laugh-dude"></span></p>
                             </div>
                     </div>
 
@@ -147,9 +131,6 @@ const Projects = () => {
                                 <Link to="https://encryasmi.netlify.app/" target="_blank" className="viwe-project-btn">
                                     <button>See Dome</button>
                                 </Link>
-
-
-                                <p>Last updated: <span id="project-encryasmi"></span></p>
                             </div>
                     </div>
 
@@ -164,9 +145,6 @@ const Projects = () => {
                                 <Link to={img2} target="_blank" className="viwe-project-btn">
                                     <button>See Dome</button>
                                 </Link>
-
-
-                                <p>Last updated: <span id="project-alphanews"></span></p>
                             </div>
                     </div>
 
@@ -180,9 +158,6 @@ const Projects = () => {
                                 <Link to="https://win-over-crush.netlify.app/" target="_blank" className="viwe-project-btn">
                                     <button>See Dome</button>
                                 </Link>
-
-
-                                <p>Last updated: <span id="project-win-over-crush"></span></p>
                             </div>
                     </div>
                 </div>
