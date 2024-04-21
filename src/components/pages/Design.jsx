@@ -1,5 +1,10 @@
 import React from 'react'
 
+import design1 from '../../assets/graphics/design1.png'
+import design2 from '../../assets/graphics/design2.png'
+import design3 from '../../assets/graphics/design3.png'
+import design4 from '../../assets/graphics/design4.png'
+
 const Design = () => {
     return (
         <>
@@ -8,10 +13,10 @@ const Design = () => {
                 <p>Collection of design and graphics</p>
 
                 <div class="designs">
-                    <img src="./imgs/graphics/M-text-logo-design.png" alt="Logo 1" />
-                    <img src="./imgs/graphics/s-line-logo2.png" alt="Logo 2" />
-                    <img src="./imgs/graphics/kingdom-sc-logo.png" alt="Logo 3" />
-                    <img src="./imgs/graphics/sc-logo.png" alt="Logo 4" />
+                    <img src={design1} alt="Logo 1" />
+                    <img src={design2} alt="Logo 2" />
+                    <img src={design3} alt="Logo 3" />
+                    <img src={design4} alt="Logo 4" />
                 </div>
 
                 <div class="large-button">

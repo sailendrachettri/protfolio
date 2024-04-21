@@ -1,4 +1,7 @@
 import React from 'react'
+
+import { Link } from 'react-router-dom'
+
 import img1 from '../../assets/projectImages/img1.jpg'
 import img2 from '../../assets/projectImages/img2.jpg'
 import img3 from '../../assets/projectImages/img3.jpg'
@@ -26,9 +29,9 @@ const Projects = () => {
                                 models. And read about the latest technologies emerging in the industry.</p>
 
                             <div class="btn-and-update">
-                                <a href="https://learnllm.onrender.com/" target="_blank" class="viwe-project-btn">
+                                <Link to="https://learnllm.onrender.com/" target="_blank" class="viwe-project-btn">
                                     <button>See Dome</button>
-                                </a>
+                                </Link>
 
                                 <p>Last updated: <span id="project-learnllms"></span></p>
                             </div>
@@ -43,9 +46,9 @@ const Projects = () => {
                                 region of Sikkim.</p>
 
                             <div class="btn-and-update">
-                                <a href="https://gtravellers.onrender.com/" target="_blank" class="viwe-project-btn">
+                                <Link to="https://gtravellers.onrender.com/" target="_blank" class="viwe-project-btn">
                                     <button>See Dome</button>
-                                </a>
+                                </Link>
                                 <p>Last updated: <span id="project-gangtok-travellers"></span></p>
                             </div>
                     </div>
@@ -58,9 +61,9 @@ const Projects = () => {
                                 history and lastest information.</p>
 
                             <div class="btn-and-update">
-                                <a href="https://gk-site.netlify.app/" target="_blank" class="viwe-project-btn">
+                                <Link to="https://gk-site.netlify.app/" target="_blank" class="viwe-project-btn">
                                     <button>See Dome</button>
-                                </a>
+                                </Link>
 
                                 <p>Last updated: <span id="project-gk-site"></span></p>
                             </div>
@@ -73,9 +76,9 @@ const Projects = () => {
                                 upper-lower cases, remove extra
                                 spaces, count the number of alphabets and words, etc.</p>
                             <div class="btn-and-update">
-                                <a href="https://tanalyzer-site.netlify.app/" target="_blank" class="viwe-project-btn">
+                                <Link to="https://tanalyzer-site.netlify.app/" target="_blank" class="viwe-project-btn">
                                     <button>See Dome</button>
-                                </a>
+                                </Link>
 
                                 <p>Last updated: <span id="project-text-analyzer"></span></p>
                             </div>
@@ -89,9 +92,9 @@ const Projects = () => {
                                 don't forget anything important.</p>
 
                             <div class="btn-and-update">
-                                <a href="https://checklist-site.netlify.app/" target="_blank" class="viwe-project-btn">
+                                <Link to="https://checklist-site.netlify.app/" target="_blank" class="viwe-project-btn">
                                     <button>See Dome</button>
-                                </a>
+                                </Link>
 
 
                                 <p>Last updated: <span id="project-checklist"></span></p>
@@ -107,9 +110,9 @@ const Projects = () => {
                                 activities.</p>
 
                             <div class="btn-and-update">
-                                <a href="https://nbbgc-forcasting.netlify.app/" target="_blank" class="viwe-project-btn">
+                                <Link to="https://nbbgc-forcasting.netlify.app/" target="_blank" class="viwe-project-btn">
                                     <button>See Dome</button>
-                                </a>
+                                </Link>
 
 
                                 <p>Last updated: <span id="project-nbbgc-forcasting"></span></p>
@@ -124,9 +127,9 @@ const Projects = () => {
                                 all from api. None of the hardcoded by the developer.</p>
 
                             <div class="btn-and-update">
-                                <a href="https://laughdude.netlify.app/" target="_blank" class="viwe-project-btn">
+                                <Link to="https://laughdude.netlify.app/" target="_blank" class="viwe-project-btn">
                                     <button>See Dome</button>
-                                </a>
+                                </Link>
 
 
                                 <p>Last updated: <span id="project-laugh-dude"></span></p>
@@ -141,9 +144,9 @@ const Projects = () => {
                                 access, view, and understand sensitive information.</p>
 
                             <div class="btn-and-update">
-                                <a href="https://encryasmi.netlify.app/" target="_blank" class="viwe-project-btn">
+                                <Link to="https://encryasmi.netlify.app/" target="_blank" class="viwe-project-btn">
                                     <button>See Dome</button>
-                                </a>
+                                </Link>
 
 
                                 <p>Last updated: <span id="project-encryasmi"></span></p>
@@ -158,9 +161,9 @@ const Projects = () => {
                                 deliver them to users as fast as possible in the best visualize way</p>
 
                             <div class="btn-and-update">
-                                <a href={img2} target="_blank" class="viwe-project-btn">
+                                <Link to={img2} target="_blank" class="viwe-project-btn">
                                     <button>See Dome</button>
-                                </a>
+                                </Link>
 
 
                                 <p>Last updated: <span id="project-alphanews"></span></p>
@@ -174,9 +177,9 @@ const Projects = () => {
                                 win over your crush.</p>
 
                             <div class="btn-and-update">
-                                <a href="https://win-over-crush.netlify.app/" target="_blank" class="viwe-project-btn">
+                                <Link to="https://win-over-crush.netlify.app/" target="_blank" class="viwe-project-btn">
                                     <button>See Dome</button>
-                                </a>
+                                </Link>
 
 
                                 <p>Last updated: <span id="project-win-over-crush"></span></p>
