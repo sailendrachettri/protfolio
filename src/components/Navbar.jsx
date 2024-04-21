@@ -17,7 +17,7 @@ const Navbar = () => {
                 <nav class="navbar">
                     <ul>
                         <li><Link to="mailto:sailendra9083@gmail.com" class="active">Email</Link></li>
-                        <li><Link to="#projects">Projects</Link></li>
+                        <li><Link to="/#projects">Projects</Link></li>
                         <li><Link to="https://www.linkedin.com/in/sailendrachettri/">LinkedIn</Link></li>
                         <li><Link to="https://twitter.com/sailendrz">Twitter</Link></li>
                     </ul>
