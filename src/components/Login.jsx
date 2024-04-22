@@ -1,8 +1,9 @@
 import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import {UserContext} from '../UserContext'
+import { SERVER_URL } from '../environment';
 
-const URL = 'http://localhost:5000';
+const URL = SERVER_URL
 
 const Login = () => {
     const [username, setUsername] = useState("");

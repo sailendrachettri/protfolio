@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {useNavigate} from 'react-router-dom'
-const URL = 'http://localhost:5000'
+import { SERVER_URL } from '../environment';
+const URL = SERVER_URL
 
 const Addprojects = () => {
     const [title, setTitle] = useState("");

@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-const SERVER_URL = 'http://localhost:5000'
+import { SERVER_URL } from '../../environment'
+const URL = SERVER_URL
 
 const ProjectBox = ({id, cover, title, alt, summary, link}) => {
-    console.log(`${SERVER_URL}/${cover}`)
+    console.log(`${URL}/${cover}`)
     
     return (
         <>

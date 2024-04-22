@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { SERVER_URL } from '../environment';
 
-const URL = 'http://localhost:5000';
+const URL = SERVER_URL;
 
 
 const Signup = () => {

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ProjectBox from './ProjectBox';
-const URL = 'http://localhost:5000'
+import { SERVER_URL } from '../../environment';
+const URL = SERVER_URL
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
