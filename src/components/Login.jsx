@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import {UserContext} from '../UserContext'
+
 const URL = 'http://localhost:5000';
 
 const Login = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const {setUserInfo} = useContext(UserContext);
 
     const navigate = useNavigate();
 
@@ -13,6 +16,7 @@ const Login = () => {
 
         const response = await fetch(`${URL}/api/auth/login`, {
             method: 'POST',
+            credentials: 'include',
             headers: {
                 'Content-type' : 'application/json'
             },
@@ -22,6 +26,8 @@ const Login = () => {
         const data = await response.json();
 
         if(data.success){
+            setUserInfo(data);
+            console.log(data);
             alert("Login sucessful!");
             navigate("/");
         } else{

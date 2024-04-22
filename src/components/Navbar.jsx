@@ -19,6 +19,7 @@ const Navbar = () => {
                         <li><Link to="mailto:sailendra9083@gmail.com" className="active">Email</Link></li>
                         <li><Link to="/login">Login</Link></li>
                         <li><Link to="/register">Register</Link></li>
+                        <li><Link to="/addprojects">Add Projects</Link></li>
                         <li><Link to="#projects">Projects</Link></li>
                         <li><Link to="https://www.linkedin.com/in/sailendrachettri/">LinkedIn</Link></li>
                         <li><Link to="https://twitter.com/sailendrz">Twitter</Link></li>
