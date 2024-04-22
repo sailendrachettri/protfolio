@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom'
 import { SERVER_URL } from '../../environment'
 const URL = SERVER_URL
 
-const ProjectBox = ({id, cover, title, alt, summary, link}) => {
-    console.log(`${URL}/${cover}`)
-    
+const ProjectBox = ({id, cover, title, alt, summary, link}) => {    
     return (
         <>
             <div key={id} className="project-box">

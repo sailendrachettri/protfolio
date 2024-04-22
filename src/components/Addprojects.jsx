@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { SERVER_URL } from '../environment';
 const URL = SERVER_URL
 
 const Addprojects = () => {
     const [title, setTitle] = useState("");
-    const [summary, setSummary] =  useState("");
-    const [link, setLink] =  useState("");
-    const [alt, setAlt] =  useState("");
-    const [files, setFiles] =  useState("");
+    const [summary, setSummary] = useState("");
+    const [link, setLink] = useState("");
+    const [alt, setAlt] = useState("");
+    const [files, setFiles] = useState("");
 
     const navigate = useNavigate();
 
-    const handleSubmit = async(e)=>{
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
         const data = new FormData();
@@ -28,21 +28,24 @@ const Addprojects = () => {
             body: data
         })
 
-        const res = response.json();
-        if(res.success){
+        
+        const res = await response.json();
+        if (res.success) {
             navigate("/");
         }
     }
-    
+
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" placeholder='Title' value={title} onChange={(ev) => setTitle(ev.target.value)} />
-            <input type="text" placeholder='Summary' value={summary} onChange={(ev) => setSummary(ev.target.value)} />
-            <input type="text" placeholder='Link to project' value={link} onChange={(ev) => setLink(ev.target.value)} />
-            <input type="text" placeholder='Alt Text' value={alt} onChange={(ev) => setAlt(ev.target.value)} />
-            <input type="file" onChange={ev => setFiles(ev.target.files)} required />
-            <input type="submit" value="Add" />
+        <form onSubmit={handleSubmit} className='add-project'>
+            <div className="form-data">
+                <input type="text" placeholder='Title' value={title} onChange={(ev) => setTitle(ev.target.value)} />
+                <input type="text" placeholder='Summary' value={summary} onChange={(ev) => setSummary(ev.target.value)} />
+                <input type="text" placeholder='Link to project' value={link} onChange={(ev) => setLink(ev.target.value)} />
+                <input type="text" placeholder='Alternet text' value={alt} onChange={(ev) => setAlt(ev.target.value)} />
+                <input type="file" onChange={ev => setFiles(ev.target.files)} required />
+                <input type="submit" value="Add" className='submit-btn' />
+            </div>
         </form>
     )
 }

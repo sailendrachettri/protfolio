@@ -28,7 +28,6 @@ const Login = () => {
 
         if(data.success){
             setUserInfo(data);
-            console.log(data);
             alert("Login sucessful!");
             navigate("/");
         } else{

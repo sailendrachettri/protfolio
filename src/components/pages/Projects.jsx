@@ -19,8 +19,6 @@ const Projects = () => {
         })
     }, []);
 
-    console.log(projects)
-
     return (
         <div className="projects" id="projects">
             <h3>Recent Projects Collection</h3>

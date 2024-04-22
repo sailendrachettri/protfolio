@@ -1,111 +1,120 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Quicksand:wght@300;400;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: lavender;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: lavender;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 /* ---------------------------CSS VARIABLES ---------------------------*/
-:root{
-    --color-dim: grey;
-    --border-color: #141c3a;
-    --border-color-light: whitesmoke;
-    --navbar-bg-color: lavender;
-    --bg-color : #141c3a;
-    --text-color: whitesmoke;
-    --text-color-dark: #141c3a;
-    --header-font: 'Merriweather';
-    --para-font: 'Quicksand';
+:root {
+  --color-dim: grey;
+  --border-color: #141c3a;
+  --border-color-light: whitesmoke;
+  --navbar-bg-color: lavender;
+  --bg-color: #141c3a;
+  --text-color: whitesmoke;
+  --text-color-dark: #141c3a;
+  --header-font: 'Merriweather';
+  --para-font: 'Quicksand';
 }
 
-main{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-h1, h2, h3, h4{
-    font-family: var(--header-font);
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--header-font);
 }
 
-p, div{
-    font-family: var(--para-font);
-    color: var(--text-color-dark);
+p,
+div {
+  font-family: var(--para-font);
+  color: var(--text-color-dark);
 }
 
 /* --------------------------------BUTTONS SECTIONS-------------------------------- */
 
-.large-button{
-    margin: 3rem 0;
+.large-button {
+  margin: 3rem 0;
 }
 
-.large-button button{
-    padding: 5px 10px;
-    font-size: 1.5rem;
-    border-radius: 5px;
-    border: 1px solid whitesmoke;
-    box-shadow: 2px 2px 3px 1px whitesmoke;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out 0s;
+.large-button button {
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid whitesmoke;
+  box-shadow: 2px 2px 3px 1px whitesmoke;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out 0s;
 }
 
-.large-button button:hover{
-    transform: scale(1.1);
-    animation: colorBtn 1s ease-in-out infinite alternate-reverse;  
-}
-@keyframes colorBtn{
-    0%{
-        border-color: rebeccapurple;
-        box-shadow: 2px 2px 4px 2px rebeccapurple;  
-    }
-    30%{
-        border-color: rgb(132, 33, 231);
-        
-    }
-    60%{
-        border-color: rgb(39, 189, 89);
-        
-    }
-    80%{
-        border-color: rgb(70, 221, 39);
-        
-    }
-    100%{
-        border-color: rgb(143, 19, 87);
-    }
+.large-button button:hover {
+  transform: scale(1.1);
+  animation: colorBtn 1s ease-in-out infinite alternate-reverse;
 }
 
-.large-button a{
-    text-decoration: none;
+@keyframes colorBtn {
+  0% {
+    border-color: rebeccapurple;
+    box-shadow: 2px 2px 4px 2px rebeccapurple;
+  }
+
+  30% {
+    border-color: rgb(132, 33, 231);
+
+  }
+
+  60% {
+    border-color: rgb(39, 189, 89);
+
+  }
+
+  80% {
+    border-color: rgb(70, 221, 39);
+
+  }
+
+  100% {
+    border-color: rgb(143, 19, 87);
+  }
 }
 
-.viwe-project-btn button{
-    cursor: pointer;
-    padding: 5px 13px;
-    margin: 1rem 0;
-    border: 1px solid whitesmoke;
-    border-radius: 5px;
-    font-size: 1.3rem;
-    color: var(--text-color);
-    background-color: var(--bg-color);
-    transition: all 0.2s ease-in-out 0s; 
+.large-button a {
+  text-decoration: none;
 }
 
-.viwe-project-btn button:hover{
-    transform: scale(1.1);
+.viwe-project-btn button {
+  cursor: pointer;
+  padding: 5px 13px;
+  margin: 1rem 0;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.viwe-project-btn button:hover {
+  transform: scale(1.1);
 }
 
 /* -------------------------------NAVBAR STYLE STARTED------------------------------- */
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,27 +123,27 @@ header{
   background-color: var(--navbar-bg-color);
 }
 
-.logo{
+.logo {
   font-weight: bold;
   font-size: 1.5rem;
   cursor: pointer;
 }
 
-.logo a{
+.logo a {
   text-decoration: none;
   color: var(--text-color-dark);
 }
 
-.logo .text-logo{
+.logo .text-logo {
   width: 60px;
 }
 
-.hamburger{
+.hamburger {
   display: none;
   cursor: pointer;
 }
 
-.hamburger .line{
+.hamburger .line {
   height: 3px;
   width: 20px;
   margin: 5px 0;
@@ -142,15 +151,15 @@ header{
   border-radius: 40px;
 }
 
-.navbar ul{
+.navbar ul {
   display: flex;
 }
 
-.navbar ul li{
+.navbar ul li {
   list-style: none;
 }
 
-.navbar ul li a{
+.navbar ul li a {
   text-decoration: none;
   padding: 3px 10px;
   cursor: pointer;
@@ -158,59 +167,66 @@ header{
   transition: all 0.2s ease-in-out 0s;
 }
 
-.navbar ul li a:hover{
+.navbar ul li a:hover {
   color: var(--text-color);
   background-color: var(--bg-color);
   border-radius: 50px;
   transform: scale(1.2);
 }
 
-.navbar ul li a.active{
+.navbar ul li a.active {
   color: var(--text-color);
   background-color: var(--bg-color);
   border-radius: 50px;
   margin-right: 5px;
 }
 
-@media only screen and (max-width: 650px){
-  header{
-      padding: 0 30px;
+@media only screen and (max-width: 650px) {
+  header {
+    padding: 0 30px;
   }
-  .hamburger{
-      display: block;
+
+  .hamburger {
+    display: block;
   }
-  .navbar{
-      top: 5rem;   
-      position: absolute;
-      right: 0;
-      left: 0;
-      overflow: hidden;
-      background-color: var(--navbar-bg-color);
-      height: 0;
-      transition: 0.5s;
+
+  .navbar {
+    top: 5rem;
+    position: absolute;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: var(--navbar-bg-color);
+    height: 0;
+    transition: 0.5s;
   }
-  .navbar.active{
-      height: 200px;
+
+  .navbar.active {
+    height: 200px;
   }
-  .navbar ul{
-      display: block;
-      width: fit-content;
-      text-align: center;
-      opacity: 0;
-      margin: 40px auto 0 auto;
-      transition: 1s;
+
+  .navbar ul {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    opacity: 0;
+    margin: 40px auto 0 auto;
+    transition: 1s;
   }
-  .navbar.active ul{
-      opacity: 1;
+
+  .navbar.active ul {
+    opacity: 1;
   }
-  .navbar ul li{
-      margin-bottom: 1rem;
+
+  .navbar ul li {
+    margin-bottom: 1rem;
   }
 }
+
 /* -------------------------------NAVBAR STYLE ENDED------------------------------- */
 
 /* -------------------------------MAIN STYLE STARTED------------------------------- */
-.landing-page{
+.landing-page {
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -218,68 +234,72 @@ header{
   margin-top: 3rem;
 }
 
-.landing-page h2, main .landing-page p{
+.landing-page h2,
+main .landing-page p {
   margin: 0.8rem 0.3rem;
   text-align: center;
 }
 
-.landing-page h2{
+.landing-page h2 {
   font-size: 2rem;
   padding: 0 1rem;
 }
 
-.landing-page p{
+.landing-page p {
   font-size: 24px;
 }
 
-.landing-page img{
+.landing-page img {
   width: 950px;
 }
 
 
-@media only screen and (max-width: 985px){
-  .landing-page img{
-      width: 600px;
+@media only screen and (max-width: 985px) {
+  .landing-page img {
+    width: 600px;
   }
 }
 
-@media only screen and (max-width: 650px){
-  .landing-page img{
-      margin-top: 1.5rem;
-      width: 400px;
+@media only screen and (max-width: 650px) {
+  .landing-page img {
+    margin-top: 1.5rem;
+    width: 400px;
   }
 }
 
-@media only screen and (max-width: 480px){
-  .landing-page{
-      margin-top: 1rem;
-  } 
-  .landing-page h2{
-      font-size: 1.5rem;
-  }
-  .landing-page p{
-      font-size: 18px;
-      margin: 0 0.8rem;
+@media only screen and (max-width: 480px) {
+  .landing-page {
+    margin-top: 1rem;
   }
 
-  .landing-page img{
-      margin-top: 1.5rem;
-      width: 300px;
-  }  
+  .landing-page h2 {
+    font-size: 1.5rem;
+  }
+
+  .landing-page p {
+    font-size: 18px;
+    margin: 0 0.8rem;
+  }
+
+  .landing-page img {
+    margin-top: 1.5rem;
+    width: 300px;
+  }
 }
 
-@media only screen and (max-width: 300px){
-  .landing-page img{
-      margin-top: 1.5rem;
-      width: 230px;
-  } 
-  .landing-page{
-      margin-top: 1rem;
-  } 
+@media only screen and (max-width: 300px) {
+  .landing-page img {
+    margin-top: 1.5rem;
+    width: 230px;
+  }
+
+  .landing-page {
+    margin-top: 1rem;
+  }
 }
 
 /* --------------------------INTRO PART STARTED-------------------------- */
-.intro{
+.intro {
   background-color: #141c3a;
   display: flex;
   flex-direction: column;
@@ -291,133 +311,141 @@ header{
   padding: 2rem 0;
 }
 
-.intro h3, .intro p{
+.intro h3,
+.intro p {
   background-color: #141c3a;
   color: white;
-  width: 50%;   
+  width: 50%;
 }
 
-.intro h3{
+.intro h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.intro p{
+.intro p {
   font-size: 1.2rem;
   text-align: justify;
   padding: 9px 0;
   line-height: 1.7rem;
 }
 
-@media only screen and (max-width: 880px){
-  .intro h3{
-      font-size: 1.7rem;
+@media only screen and (max-width: 880px) {
+  .intro h3 {
+    font-size: 1.7rem;
   }
-  .intro p{
-      font-size: 1.2rem;
+
+  .intro p {
+    font-size: 1.2rem;
   }
-  .intro h3, .intro p{
-      width: 80%;   
+
+  .intro h3,
+  .intro p {
+    width: 80%;
   }
 }
 
-@media only screen and (max-width: 340px){
-  .intro h3{
-      font-size: 1.4rem;
+@media only screen and (max-width: 340px) {
+  .intro h3 {
+    font-size: 1.4rem;
   }
-  .intro p{
-      font-size: 1rem;
+
+  .intro p {
+    font-size: 1rem;
   }
-  .intro h3, .intro p{
-      width: 90%;   
+
+  .intro h3,
+  .intro p {
+    width: 90%;
   }
 }
 
 /* ----------------------------TECK-STACK STARTED---------------------------- */
-.teck-stack{
+.teck-stack {
   margin-top: 4rem;
   text-align: center;
   width: 80%;
 }
 
-.teck-stack ul{
+.teck-stack ul {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1rem;
   justify-content: center;
 }
 
-.teck-stack ul li{
+.teck-stack ul li {
   list-style: none;
   border: 1px solid var(--border-color-light);
   padding: 7px;
   border-radius: 5px;
   margin: 5px;
 }
+
 /* ----------------------------TECK-STACK ENDED---------------------------- */
 
 /* ----------------------------SERVICES SECTION STARTED---------------------------- */
 
-.services-section{
+.services-section {
   margin-top: 3rem;
   width: 90%;
   text-align: center;
 }
 
-.services-section h1{
+.services-section h1 {
   margin: 1rem 0;
 }
 
-.services{
+.services {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
+
 }
 
-.service{
+.service {
   border: 1px solid var(--border-color-light);
   border-radius: 5px;
-  padding: 1rem 10px;    
+  padding: 1rem 10px;
   margin: 1rem;
   width: 30%;
 }
 
-.service span{
+.service span {
   font-size: 5rem;
 }
 
-.service h3{
+.service h3 {
   text-align: center;
   margin: 0.5rem 0;
 }
 
-.service div{
+.service div {
   text-align: justify;
   color: var(--color-dim);
   padding: 0 5px;
 }
 
 @media only screen and (max-width: 1100px) {
-  .services-section{
-      width: 100%;
+  .services-section {
+    width: 100%;
   }
 
-  .service{
-      width: 45%;
+  .service {
+    width: 45%;
   }
 }
 
-@media only screen and (max-width: 700px){
-  .service{
-      width: 80%;
+@media only screen and (max-width: 700px) {
+  .service {
+    width: 80%;
   }
 }
 
 /* ----------------------------SERVICES SECTION ENDED---------------------------- */
 
 /* -------------------------PROJECTS SECTION STARTED------------------------- */
-.projects{
+.projects {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -427,19 +455,19 @@ header{
   flex-wrap: wrap;
 }
 
-.projects h3{
+.projects h3 {
   font-size: 2rem;
   text-align: center;
 }
 
-.projects .para{
+.projects .para {
   width: 80%;
   text-align: center;
   margin-top: 1rem;
   font-size: 1.3rem;
 }
 
-.project-container{
+.project-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -447,7 +475,7 @@ header{
   margin-top: 4rem;
 }
 
-.project-container .project-box{
+.project-container .project-box {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -456,48 +484,49 @@ header{
   box-shadow: 2px 2px 5px var(--border-color);
 }
 
-.project-container .project-box h4{
+.project-container .project-box h4 {
   margin: 10px 0;
   text-transform: capitalize;
 }
 
-.project-container .project-box p{
+.project-container .project-box p {
   padding: 0 1rem 1rem 1rem;
   text-align: justify;
 }
 
-.project-container .project-box img{
+.project-container .project-box img {
   max-height: 200px;
   width: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
 
-.project-container .project-box .btn-and-update{
+.project-container .project-box .btn-and-update {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 0 5px;
 }
-.btn-and-update p{
+
+.btn-and-update p {
   color: rgb(161, 161, 190);
 }
 
-@media only screen and (max-width: 800px){
-  .project-container .project-box{
-      width: 45%;
+@media only screen and (max-width: 800px) {
+  .project-container .project-box {
+    width: 45%;
   }
 }
 
-@media only screen and (max-width: 500px){
-  .project-container .project-box{
-      width: 90%;
+@media only screen and (max-width: 500px) {
+  .project-container .project-box {
+    width: 90%;
   }
 }
 
 /* -------------------------HOMEPAGE GRAPHICS SECTION------------------------- */
-.design-section{
-  width: 100%; 
+.design-section {
+  width: 100%;
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
@@ -505,30 +534,30 @@ header{
   align-items: center;
 }
 
-.design-section h3{
+.design-section h3 {
   font-size: 2rem;
   text-align: center;
 }
 
-.design-section p{
+.design-section p {
   margin: 1rem 0;
 }
 
-.designs{
+.designs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.designs img{
+.designs img {
   margin: 1.5rem;
   width: 180px;
 }
 
-@media (max-width:550px){
-  .designs img{
-      width: 130px;
-      margin: 0.9rem;
+@media (max-width:550px) {
+  .designs img {
+    width: 130px;
+    margin: 0.9rem;
   }
 }
 
@@ -543,7 +572,7 @@ header{
   text-align: center;
 }
 
-.carousel-container h1{
+.carousel-container h1 {
   margin: 1rem 0;
 }
 
@@ -553,7 +582,7 @@ header{
 
 .carousel-slide img {
   max-height: 350px;
-  object-fit:contain;
+  object-fit: contain;
   border-radius: 5px;
 }
 
@@ -570,13 +599,14 @@ header{
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .carousel-slide img{
+  .carousel-slide img {
     width: 90%;
   }
 }
@@ -593,18 +623,18 @@ footer {
   background-color: var(--bg-color);
 }
 
-footer h3{
+footer h3 {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-size: 2rem;
 }
 
-footer .logo{
+footer .logo {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
 
-footer p{
+footer p {
   margin: 1rem 0;
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -614,21 +644,21 @@ footer p{
   text-transform: capitalize;
 }
 
-footer div{
+footer div {
   background-color: var(--bg-color);
 }
 
-footer .icons{
+footer .icons {
   margin: 3rem 0;
   text-align: center;
 }
 
-footer .icons a{
+footer .icons a {
   text-decoration: none;
   background-color: var(--bg-color);
 }
 
-footer img{
+footer img {
   margin: 0 0.2rem;
   cursor: pointer;
   width: 50px;
@@ -636,18 +666,59 @@ footer img{
   transition: transform 0.3s ease-in;
 }
 
-footer img:hover{
+footer img:hover {
   transform: scale(0.9);
 }
 
-footer .copyright{
+footer .copyright {
   color: var(--text-color);
   text-align: center;
   text-transform: capitalize;
 }
 
-footer .year{
+footer .year {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
+
 /* -------------------------------FOOTER STYLE ENDED------------------------------- */
+
+
+/* -------------------------------ADD PROJECT STYLE STARTED------------------------------- */
+.add-project {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-data {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  border: 1px solid var(--border-color-light);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.form-data input {
+  font-size: 1rem;
+  padding: 3px;
+  outline: none;
+  margin: 10px 0;
+  border: 1px solid var(--border-color-light);
+  border-radius: 5px;
+  color: grey;
+}
+
+.submit-btn{
+  cursor: pointer;
+}
+.submit-btn:hover{
+  color: whitesmoke;
+  background-color: grey;
+}
+
+/* -------------------------------ADD PROJECT STYLE ENDED------------------------------- */
