@@ -11,7 +11,7 @@ const Design = () => {
         <>
             <div className="design-section">
                 <h3>Recent Logo Designs</h3>
-                <p>Collection of design and graphics</p>
+                <p className='para'>A curated gallery where creativity meets elegance</p>
 
                 <div className="designs">
                     <img src={design1} alt="Logo 1" />

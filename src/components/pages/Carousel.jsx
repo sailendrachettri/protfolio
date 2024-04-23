@@ -31,6 +31,7 @@ const Carousel = () => {
   return (
     <div className='carousel'>
         <h1>Snapshots of Life's Journey</h1>
+        <p className='para'> An unpredictable adventure, embraced wholeheartedly</p>
       <div className="carousel-container">
         {images.map((image, index) => (
           <div

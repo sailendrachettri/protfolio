@@ -5,22 +5,23 @@ const Techstack = () => {
         <>
             <div className="teck-stack">
                 <h1>Technology Stacks</h1>
+                <p className='para'>Curated capabilities, unleashing untapped potential</p>
                 <ul>
                     <li>Javascript</li>
-                    <li>ReactJs</li>
-                    <li>MongoDB</li>
+                    <li className='active'>ReactJs</li>
                     <li>Express</li>
-                    <li>NodeJS</li>
                     <li>JWT Auth</li>
                     <li>Git & Github</li>
+                    <li className='active'>NodeJS</li>
                     <li>Python</li>
                     <li>C & C++</li>
                     <li>HTML & CSS</li>
                     <li>Bootstrap</li>
+                    <li className='active'>MongoDB</li>
                     <li>Material UI</li>
                     <li>Netlify & Renders</li>
                     <li>DigitalOcean</li>
-                    <li>Logo Design</li>
+                    <li className='active'>Logo Design</li>
                     <li>Vector Design</li>
                 </ul>
             </div>

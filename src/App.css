@@ -374,6 +374,11 @@ main .landing-page p {
   justify-content: center;
 }
 
+.teck-stack ul .active{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
 .teck-stack ul li {
   list-style: none;
   border: 1px solid var(--border-color-light);
@@ -392,8 +397,8 @@ main .landing-page p {
   text-align: center;
 }
 
-.services-section h1 {
-  margin: 1rem 0;
+.services-section .para{
+  margin-bottom: 1rem;
 }
 
 .services {
@@ -460,8 +465,8 @@ main .landing-page p {
   text-align: center;
 }
 
-.projects .para {
-  width: 80%;
+.para {
+  /* width: 80%; */
   text-align: center;
   margin-top: 1rem;
   font-size: 1.3rem;
@@ -566,6 +571,7 @@ main .landing-page p {
 /* -----------------------------CAROUSEL STYLE STARTED-----------------------------  */
 .carousel{
   width: 100%;
+  text-align: center;
 }
 .carousel-container {
   overflow: hidden;
@@ -577,7 +583,6 @@ main .landing-page p {
 }
 
 .carousel h1 {
-  text-align: center;
   margin: 3rem 1rem 0 0;
 }
 

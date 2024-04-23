@@ -25,7 +25,7 @@ const Projects = () => {
     return (
         <div className="projects" id="projects">
             <h3>Recent Projects Collection</h3>
-            <p className="para">Everything I build or worked on as of now</p>
+            <p className="para">All my creations, one collection</p>
             <div className="project-container">
                 { !loading ?
                     projects.length > 0 && projects.map((project, i)=>(

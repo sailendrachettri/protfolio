@@ -6,6 +6,7 @@ const Services = () => {
         <>
             <div className="services-section">
                 <h1>Available Services</h1>
+                <p className='para'>A symphony of self-growth, each note a lesson learned</p>
                 <div className="services">
 
                     <div className="service">
