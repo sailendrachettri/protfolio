@@ -57,11 +57,11 @@ const Navbar = () => {
                 <nav className="navbar">
                     <ul>
                         <li><Link to="mailto:sailendra9083@gmail.com" className="active">Email</Link></li>
-                        {!username && <span>
+                        {!username && <span style={{display: 'flex'}}>
                             <li><Link to="/login">Login</Link></li>
-                            <li><Link to="/register">Register</Link></li>
+                            {/* <li><Link to="/register">Register</Link></li> */}
                         </span>}
-                       {username && <span>
+                       {username && <span style={{display: 'flex'}}>
                             <li><Link to="/addprojects">Add Projects</Link></li>
                             <li><Link onClick={handleLogout}>Logout</Link></li>
                         </span>}

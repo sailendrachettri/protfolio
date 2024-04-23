@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { SERVER_URL } from '../../environment'
-const URL = SERVER_URL
 
 const ProjectBox = ({id, cover, title, alt, summary, link}) => {    
     return (

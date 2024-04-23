@@ -722,3 +722,12 @@ footer .year {
 }
 
 /* -------------------------------ADD PROJECT STYLE ENDED------------------------------- */
+/* -------------------------------LOGIN STYLE STARTED------------------------------- */
+form{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+/* -------------------------------LOGIN STYLE ENDED------------------------------- */

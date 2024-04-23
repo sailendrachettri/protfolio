@@ -1,3 +1,6 @@
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+
 import React, { useEffect, useState } from 'react';
 import ProjectBox from './ProjectBox';
 import { SERVER_URL } from '../../environment';
@@ -29,7 +32,10 @@ const Projects = () => {
                         <ProjectBox {...project} key={i} />
                     ))
 
-                    : "Loading..."
+                    : <span style={{width: '70%', textAlign: 'center'}}>
+                        <p>Loading the projects from database...</p>
+                        <Skeleton baseColor='grey' count={10} />
+                    </span>
                 }
             </div>
         </div>
