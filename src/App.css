@@ -564,26 +564,35 @@ main .landing-page p {
 /* -------------------------------MAIN STYLE ENDED------------------------------- */
 
 /* -----------------------------CAROUSEL STYLE STARTED-----------------------------  */
-.carousel-container {
+.carousel{
   width: 100%;
+}
+.carousel-container {
   overflow: hidden;
-  position: relative;
-  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
   text-align: center;
+  background-color: var(--bg-color);
 }
 
-.carousel-container h1 {
-  margin: 1rem 0;
+.carousel h1 {
+  text-align: center;
+  margin: 3rem 1rem 0 0;
 }
 
 .carousel-slide {
+  background-color: var(--bg-color);
+  width: fit-content;
   display: none;
+  margin: 3rem 0;
 }
 
 .carousel-slide img {
   max-height: 350px;
   object-fit: contain;
   border-radius: 5px;
+  padding: 1rem;
 }
 
 .carousel-slide.active {

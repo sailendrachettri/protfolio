@@ -20,9 +20,9 @@ const Design = () => {
                     <img src={design4} alt="Logo 4" />
                 </div>
 
-                <div className="large-button">
+                {/* <div className="large-button">
                     <Link to="/grpahics"><button>See More Designs &#x21e2;</button></Link>
-                </div>
+                </div> */}
             </div>
         </>
     )
