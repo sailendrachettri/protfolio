@@ -66,6 +66,7 @@ const Navbar = () => {
                             <li><Link onClick={handleLogout}>Logout</Link></li>
                         </span>}
                         <li><Link to="#projects">Projects</Link></li>
+                        <li><Link to="https://codebinds.blinkstore.in" className='active'>Store</Link></li>
                         <li><Link to="https://www.linkedin.com/in/sailendrachettri/">LinkedIn</Link></li>
                         <li><Link to="https://twitter.com/sailendrz">Twitter</Link></li>
                     </ul>
