@@ -38,6 +38,7 @@ const Login = () => {
     return (
         <>
             <form onSubmit={handleSubmit}>
+            <p>Admin login only</p>
                 <div className='form-data'>
                     <input type="text" placeholder='Username' className='form-input' value={username} onChange={(ev) => setUsername(ev.target.value)} required minLength={4} />
                     <input type="password" placeholder='Password' className='form-input' value={password} onChange={(ev) => setPassword(ev.target.value)} required minLength={4} />
