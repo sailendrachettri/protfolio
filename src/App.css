@@ -13,7 +13,8 @@ html {
 
 /* ---------------------------CSS VARIABLES ---------------------------*/
 :root {
-  --color-dim: grey;
+  --color-dim: rgba(128, 128, 128);
+  --color-extra-dim: rgba(128, 128, 128, 0.473);
   --border-color: #141c3a;
   --border-color-light: whitesmoke;
   --navbar-bg-color: lavender;
@@ -515,6 +516,10 @@ main .landing-page p {
 
 .btn-and-update p {
   color: rgb(161, 161, 190);
+}
+
+.last-updated{
+  color: var(--color-extra-dim);
 }
 
 @media only screen and (max-width: 800px) {
