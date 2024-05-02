@@ -5,14 +5,10 @@ import dateFormat from 'dateformat'
 import { UserContext } from '../../UserContext';
 
 
-const ProjectBox = ({ id, cover, title, alt, summary, link, updatedAt }) => {
-    const { userInfo } = useContext(UserContext);
-    const activeUser = userInfo?.username;
-
-    
+const ProjectBox = ({ _id, cover, title, alt, summary, link, updatedAt }) => {    
     return (
         <>
-            <div key={id} className="project-box">
+            <div key={_id} className="project-box">
                 <img src={`${SERVER_URL}/${cover}`} alt={alt} />
                 <h4 className="project-title">{title}</h4>
                 <p className="project-description">{(summary.length < 180) ? summary : summary.substring(0, 180) + "(...more)"}</p>
@@ -22,14 +18,6 @@ const ProjectBox = ({ id, cover, title, alt, summary, link, updatedAt }) => {
                         <button>See Demo</button>
                     </Link>
                 </div>
-                {
-                    // If the user loggedIn the only show the updated today button
-                    // click the button only if the project is updated today, so that it changes the last updated status of the project
-                    activeUser &&
-                    <div className='viwe-project-btn'>
-                       <Link to={`/update/${id}`}> <button>Updated Today</button> </Link>
-                    </div>
-                }
             </div>
         </>
     )

@@ -7,7 +7,6 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Addprojects from "./components/Addprojects";
 import { UserContextProvider } from "./UserContext";
-import EditProject from "./components/pages/EditProject";
 
 function App() {
     return (
@@ -20,7 +19,6 @@ function App() {
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Signup />} />
                     <Route path="/addprojects" element={<Addprojects />} />
-                    <Route path="/update:id" element={<EditProject />} />
                 </Routes>
             </UserContextProvider>
         </>
