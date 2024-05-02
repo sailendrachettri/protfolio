@@ -5,7 +5,11 @@ import dateFormat from 'dateformat'
 import { UserContext } from '../../UserContext';
 
 
-const ProjectBox = ({ _id, cover, title, alt, summary, link, updatedAt }) => {    
+const ProjectBox = ({ _id, cover, title, alt, summary, link, updatedAt }) => {
+    // variable
+    const { userInfo } = useContext(UserContext);
+    const activeUser = userInfo?.username;
+
     return (
         <>
             <div key={_id} className="project-box">
@@ -18,6 +22,12 @@ const ProjectBox = ({ _id, cover, title, alt, summary, link, updatedAt }) => {
                         <button>See Demo</button>
                     </Link>
                 </div>
+                {
+                    activeUser &&
+                    <div className='viwe-project-btn'>
+                        <Link to={`update/${_id}`}>  <button>Edit</button>  </Link>
+                    </div>
+                }
             </div>
         </>
     )

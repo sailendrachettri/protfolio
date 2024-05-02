@@ -9,6 +9,7 @@ import Addprojects from "./components/Addprojects";
 import { UserContextProvider } from "./UserContext";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import EditProject from "./components/pages/EditProject";
   
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Signup />} />
                     <Route path="/addprojects" element={<Addprojects />} />
+                    <Route path="/update/:id" element={<EditProject />} />
                 </Routes>
             </UserContextProvider>
         </>

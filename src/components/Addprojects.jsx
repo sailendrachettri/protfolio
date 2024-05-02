@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { SERVER_URL } from '../environment';
 import {toast} from 'react-toastify'
+import { UserContext } from '../UserContext';
 
 const URL = SERVER_URL
 
 const Addprojects = () => {
+    // usestate 
     const [title, setTitle] = useState("");
     const [summary, setSummary] = useState("");
     const [link, setLink] = useState("");
@@ -14,6 +16,12 @@ const Addprojects = () => {
 
     const navigate = useNavigate();
 
+    // variable
+    const {userInfo} = useContext(UserContext);
+    const activeUser = userInfo?.username;
+
+
+    // METHODS
     const handleSubmit = async (e) => {
         e.preventDefault();
 
