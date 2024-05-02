@@ -209,13 +209,13 @@ header {
   }
 
   .navbar.active {
-    height: 200px;
+    height: 242px;
   }
 
   .navbar ul {
     display: block;
     width: fit-content;
-    text-align: center;
+    text-align: start;
     opacity: 0;
     margin: 40px auto 0 auto;
     transition: 1s;

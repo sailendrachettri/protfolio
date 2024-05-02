@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import logo from '../assets/logo.png'
 import { UserContext } from '../UserContext'
@@ -6,6 +6,7 @@ import { SERVER_URL } from '../environment'
 import { toast } from 'react-toastify'
 
 const Navbar = () => {
+    const [active, setActive] = useState("");
 
     const { userInfo, setUserInfo } = useContext(UserContext);
 
@@ -17,6 +18,11 @@ const Navbar = () => {
     const twitterURL = 'https://twitter.com/sailendrz';
 
     // ----------------------------METHODS----------------------------
+    // hamburgre menu on mobile devices
+    const toggleHamburger = () => {
+        setActive(!active);
+    }
+
     // get the looged in user information
     useEffect(() => {
         fetch(`${SERVER_URL}/api/auth/profile`, {
@@ -54,12 +60,12 @@ const Navbar = () => {
                 <div className="logo">
                     <Link to="/"> <img src={logo} alt='Logo' className='text-logo' />ILENDRA </Link>
                 </div>
-                <div className="hamburger">
+                <div className="hamburger" onClick={toggleHamburger}>
                     <div className="line"></div>
                     <div className="line"></div>
                     <div className="line"></div>
                 </div>
-                <nav className="navbar">
+                <nav className={`navbar ${active ? "active" : ""}`}>
                     <ul>
                         <li><Link to="mailto:sailendra9083@gmail.com" className="active">Email</Link></li>
                         {!username && <span style={{ display: 'flex' }}>
