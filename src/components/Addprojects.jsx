@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { SERVER_URL } from '../environment';
+import {toast} from 'react-toastify'
+
 const URL = SERVER_URL
 
 const Addprojects = () => {
@@ -31,6 +33,7 @@ const Addprojects = () => {
         
         const res = await response.json();
         if (res.success) {
+            toast.success("Project added successful!")
             navigate("/");
         }
     }

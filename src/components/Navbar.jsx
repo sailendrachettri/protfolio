@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import logo from '../assets/logo.png'
 import { UserContext } from '../UserContext'
 import { SERVER_URL } from '../environment'
+import { toast } from 'react-toastify'
 
 const Navbar = () => {
 
@@ -40,7 +41,7 @@ const Navbar = () => {
             method: 'POST'
         })
         setUserInfo(null);
-
+        toast.success("Byee 👋");
         navigate("/login");
     }
 

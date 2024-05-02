@@ -7,11 +7,15 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Addprojects from "./components/Addprojects";
 import { UserContextProvider } from "./UserContext";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+  
 
 function App() {
     return (
         <>
             <ScrollToAnchor />
+            <ToastContainer />
             <UserContextProvider>
                 <Routes>
                     <Route path="/" element={<Homepage />} />

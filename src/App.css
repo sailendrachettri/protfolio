@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: lavender;
+  /* background-color: lavender; */
 }
 
 html {
@@ -19,6 +19,7 @@ html {
   --border-color-light: whitesmoke;
   --navbar-bg-color: lavender;
   --bg-color: #141c3a;
+  --bg-light: lavender;
   --text-color: whitesmoke;
   --text-color-dark: #141c3a;
   --header-font: 'Merriweather';
@@ -31,6 +32,10 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+body {
+  background-color: var(--bg-light);
 }
 
 h1,
@@ -376,7 +381,7 @@ main .landing-page p {
   justify-content: center;
 }
 
-.teck-stack ul .active{
+.teck-stack ul .active {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
@@ -399,7 +404,7 @@ main .landing-page p {
   text-align: center;
 }
 
-.services-section .para{
+.services-section .para {
   margin-bottom: 1rem;
 }
 
@@ -519,7 +524,7 @@ main .landing-page p {
   color: rgb(161, 161, 190);
 }
 
-.last-updated{
+.last-updated {
   color: var(--color-extra-dim);
 }
 
@@ -575,10 +580,11 @@ main .landing-page p {
 /* -------------------------------MAIN STYLE ENDED------------------------------- */
 
 /* -----------------------------CAROUSEL STYLE STARTED-----------------------------  */
-.carousel{
+.carousel {
   width: 100%;
   text-align: center;
 }
+
 .carousel-container {
   overflow: hidden;
   display: flex;
@@ -733,21 +739,29 @@ footer .year {
   color: grey;
 }
 
-.submit-btn{
+.submit-btn {
   cursor: pointer;
 }
-.submit-btn:hover{
+
+.submit-btn:hover {
   color: whitesmoke;
   background-color: grey;
 }
 
 /* -------------------------------ADD PROJECT STYLE ENDED------------------------------- */
 /* -------------------------------LOGIN STYLE STARTED------------------------------- */
-form{
+form {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
+
+form h3 {
+  margin-bottom: 1rem;
+  color: red;
+}
+
 /* -------------------------------LOGIN STYLE ENDED------------------------------- */
