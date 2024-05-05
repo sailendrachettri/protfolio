@@ -15,6 +15,7 @@ const Techstack = () => {
                     <li className='active'>NodeJS</li>
                     <li>Python</li>
                     <li>C & C++</li>
+                    <li>Tailwind CSS</li>
                     <li>HTML & CSS</li>
                     <li>Bootstrap</li>
                     <li className='active'>MongoDB</li>
