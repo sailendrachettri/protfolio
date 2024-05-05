@@ -1,10 +1,7 @@
-import React, { useContext, useState } from 'react'
+import React, {useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { SERVER_URL } from '../environment';
 import {toast} from 'react-toastify'
-import { UserContext } from '../UserContext';
-
-const URL = SERVER_URL
 
 const Addprojects = () => {
     // usestate 
@@ -15,10 +12,6 @@ const Addprojects = () => {
     const [files, setFiles] = useState("");
 
     const navigate = useNavigate();
-
-    // variable
-    const {userInfo} = useContext(UserContext);
-    const activeUser = userInfo?.username;
 
 
     // METHODS
@@ -32,7 +25,7 @@ const Addprojects = () => {
         data.set('alt', alt);
         data.set('file', files[0]);
 
-        const response = await fetch(`${URL}/api/project/add`, {
+        const response = await fetch(`${SERVER_URL}/api/project/add`, {
             method: 'POST',
             credentials: 'include',
             body: data

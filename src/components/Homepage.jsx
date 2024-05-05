@@ -10,6 +10,7 @@ import Footer from './pages/Footer'
 import Carousel from './pages/Carousel'
 
 const Homepage = () => {
+
     return (
         <>
             <div className='bg-color'>

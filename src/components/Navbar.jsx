@@ -74,6 +74,7 @@ const Navbar = () => {
                         </span>}
                         {username && <span style={{ display: 'flex' }}>
                             <li><Link to="/addprojects">Add Projects</Link></li>
+                            <li><Link to="/addskills">Add Skills</Link></li>
                             <li><Link onClick={handleLogout}>Logout</Link></li>
                         </span>}
                         <li><Link to="#projects">Projects</Link></li>

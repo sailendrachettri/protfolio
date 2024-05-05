@@ -45,6 +45,21 @@ h4 {
   font-family: var(--header-font);
 }
 
+.error-heading {
+  margin: 2rem 0;
+  color: rgb(230, 53, 53);
+}
+
+.error-btn {
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 1px solid whitesmoke;
+  cursor: pointer;
+  color: blue;
+  box-shadow: 2px 2px 2px blue;
+  border-radius: 5px;
+}
+
 p,
 div {
   font-family: var(--para-font);
