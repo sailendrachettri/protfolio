@@ -411,6 +411,67 @@ main .landing-page p {
 
 /* ----------------------------TECK-STACK ENDED---------------------------- */
 
+/* ----------------------------EXPREIENCE&EDUCATION STARTED---------------------------- */
+
+.exp-edu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: max-content;
+  width: 80vw;
+  margin: 5rem 0;
+}
+
+.exp-edu-section .info-block {
+  display: flex;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.info-block .exp-edu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 49%;
+  text-align: start;
+  margin-right: 3rem;
+}
+
+.exp-edu h2 {
+  margin-bottom: 2rem;
+}
+
+.exp-edu .info {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.dot-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.dot{
+  font-size: 5rem;
+  color: rgb(35, 105, 196);
+}
+
+.info .bio {
+  padding-left: 1rem;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 2px 2px 4px var(--color-dim);
+}
+
+.bio .year{
+  color: var(--color-dim);
+}
+
+
+/* ----------------------------EXPREIENCE&EDUCATION ENDED---------------------------- */
+
 /* ----------------------------SERVICES SECTION STARTED---------------------------- */
 
 .services-section {

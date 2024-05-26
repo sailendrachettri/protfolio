@@ -8,6 +8,7 @@ import Projects from './pages/Projects'
 import Design from './pages/Design'
 import Footer from './pages/Footer'
 import Carousel from './pages/Carousel'
+import ExperienceEducation from './pages/ExperienceEducation'
 
 const Homepage = () => {
 
@@ -19,6 +20,7 @@ const Homepage = () => {
                     <Landingpage />
                     <Intro />
                     <Techstack />
+                    <ExperienceEducation />
                     <Projects />
                     <Services />
                     <Carousel />
