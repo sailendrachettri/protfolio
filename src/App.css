@@ -575,7 +575,6 @@ main .landing-page p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
   flex-wrap: wrap;
 }
 
