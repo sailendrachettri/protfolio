@@ -453,29 +453,56 @@ main .landing-page p {
   margin-right: 1rem;
 }
 
-.dot{
+.dot {
   font-size: 5rem;
   color: rgb(35, 105, 196);
 }
 
 .info .bio {
-  padding-left: 1rem;
+  padding: 1rem;
   border-radius: 5px;
   padding: 1rem;
   box-shadow: 2px 2px 4px var(--color-dim);
+  max-height: 50vh;
+  overflow: hidden;
 }
 
-.bio .year{
+.bio .year {
   color: var(--color-dim);
 }
 
-.bio h3{
+.bio h3 {
   margin: 0.5rem 0;
 }
 
-.bio .summary{
+.bio .summary {
   line-height: 1.9rem;
   text-align: justify;
+}
+
+@media only screen and (max-width: 900px) {
+  .info-block {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .info-block .exp-edu{
+    width: 70%;
+  }
+
+  .info .bio {
+    max-height: fit-content;
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .exp-edu-section{
+    width: 95%;
+  }
+  .info-block .exp-edu{
+    width: 100%;
+  }
 }
 
 
