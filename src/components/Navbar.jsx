@@ -13,9 +13,7 @@ const Navbar = () => {
     // variables
     const navigate = useNavigate();
     const resumeURL = 'https://drive.google.com/file/d/10V7j5lAsDgffbvn6j9cSjWwGLQLbY-nz/view?usp=sharing';
-    const merchantURL = 'https://codebinds.blinkstore.in';
     const linkedinURL = 'https://www.linkedin.com/in/sailendrachettri';
-    const twitterURL = 'https://twitter.com/sailendrz';
 
     // ----------------------------METHODS----------------------------
     // hamburgre menu on mobile devices
@@ -78,10 +76,8 @@ const Navbar = () => {
                             <li><Link onClick={handleLogout}>Logout</Link></li>
                         </span>}
                         <li><Link to="#projects">Projects</Link></li>
-                        <li><Link to={merchantURL}>Store</Link></li>
                         <li><Link to={resumeURL} className='active'>Resume</Link></li>
                         <li><Link to={linkedinURL}>LinkedIn</Link></li>
-                        <li><Link to={twitterURL}>Twitter</Link></li>
                     </ul>
                 </nav>
             </header>

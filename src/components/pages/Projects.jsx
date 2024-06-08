@@ -1,5 +1,4 @@
-import Skeleton from 'react-loading-skeleton'
-import 'react-loading-skeleton/dist/skeleton.css'
+import LoadingPage from '../../Utils/LoadingPage';
 
 import React, { useEffect, useState } from 'react';
 import ProjectBox from './ProjectBox';
@@ -27,15 +26,14 @@ const Projects = () => {
             <h3>Recent Projects Collection</h3>
             <p className="para">All my creations, one collection</p>
             <div className="project-container">
-                { !loading ?
+                {!loading ?
                     projects.length > 0 && projects.map((project, i)=>(
                         <ProjectBox {...project} key={i} />
                     ))
 
-                    : <span style={{width: '70%', textAlign: 'center'}}>
-                        <p>Loading the projects from database...</p>
-                        <Skeleton baseColor='grey' count={10} />
-                    </span>
+                    : <>
+                        <LoadingPage />
+                    </>
                 }
             </div>
         </div>

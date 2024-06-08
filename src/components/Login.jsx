@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { UserContext } from '../UserContext'
 import { SERVER_URL } from '../environment';
 import { toast } from 'react-toastify'
+import LoadingPage from '../Utils/LoadingPage';
 
 const URL = SERVER_URL
 
@@ -10,6 +11,7 @@ const Login = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [loading, setLoading] = useState(false);
+    const [pageLoading, setPageLoading] = useState(true);
 
     const { setUserInfo } = useContext(UserContext);
     const navigate = useNavigate();
@@ -39,6 +41,18 @@ const Login = () => {
             toast.error(data.message);
             setLoading(false);
         }
+    }
+
+    setTimeout(() => {
+        setPageLoading(false);
+    }, 2000);
+
+    if (pageLoading) {
+        return        (
+            <div className='loading-page'>
+                <LoadingPage />
+            </div>
+        );
     }
 
     return (

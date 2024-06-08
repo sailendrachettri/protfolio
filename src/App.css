@@ -66,6 +66,14 @@ div {
   color: var(--text-color-dark);
 }
 
+.loading-page{
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* --------------------------------BUTTONS SECTIONS-------------------------------- */
 
 .large-button {

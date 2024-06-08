@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { SERVER_URL } from '../../environment'
-import Skeleton from 'react-loading-skeleton';
+import { SERVER_URL } from '../../environment';
+import LoadingPage from '../../Utils/LoadingPage';
 
 
 const Techstack = () => {
@@ -51,10 +51,9 @@ const Techstack = () => {
                             <li key={index} className={skill.highlight ? "active" : ""}>{skill.skillname}</li>
                         )
 
-                        : <span style={{ width: '70%', textAlign: 'center' }}>
-                            <p>Loading the Skills from database...</p>
-                            <Skeleton baseColor='grey' count={5} />
-                        </span>
+                        : <>
+                            <LoadingPage />
+                        </>
                     }
                 </ul>
             </div>

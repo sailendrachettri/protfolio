@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-// import facebooklogo from '../../assets/social/facebook.png';
 import githublogo from '../../assets/social/github.png';
 import instalogo from '../../assets/social/insta.png';
 import linkedinlogo from '../../assets/social/linkedin.png';

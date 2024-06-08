@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './Navbar'
 import Landingpage from './pages/Landingpage'
 import Intro from './pages/Intro'
@@ -9,8 +9,23 @@ import Design from './pages/Design'
 import Footer from './pages/Footer'
 import Carousel from './pages/Carousel'
 import ExperienceEducation from './pages/ExperienceEducation'
+import LoadingPage from '../Utils/LoadingPage'
 
 const Homepage = () => {
+    // HOOKS
+    const [pageLoading, setPageLoading] = useState(true);
+
+    setTimeout(() => {
+        setPageLoading(false);
+    }, 2000);
+
+    if(pageLoading){
+        return        (
+            <div className='loading-page'>
+                <LoadingPage />
+            </div>
+        );
+    }
 
     return (
         <>
