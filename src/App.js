@@ -24,7 +24,6 @@ function App() {
         <>
             <ScrollToAnchor />
             <ToastContainer />
-            {/* <UserContextProvider> */}
                 <Routes>
                     <Route path="/" element={<Homepage />} />
                     <Route path="/graphics" element={<Grpahics />} />
@@ -34,7 +33,6 @@ function App() {
                     <Route path="/addskills" element={username ? <AddTechStack />: <Login />} />
                     <Route path="/update/:id" element={<EditProject />} />
                 </Routes>
-            {/* </UserContextProvider> */}
         </>
     )
 }

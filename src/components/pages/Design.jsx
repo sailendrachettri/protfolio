@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 
 import design1 from '../../assets/graphics/design1.png'
 import design2 from '../../assets/graphics/design2.png'
