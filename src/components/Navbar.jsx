@@ -14,6 +14,7 @@ const Navbar = () => {
     const navigate = useNavigate();
     const resumeURL = 'https://drive.google.com/file/d/10V7j5lAsDgffbvn6j9cSjWwGLQLbY-nz/view?usp=sharing';
     const linkedinURL = 'https://www.linkedin.com/in/sailendrachettri';
+    const githubURL = "https://github.com/sailendrachettri";
 
     // ----------------------------METHODS----------------------------
     // hamburgre menu on mobile devices
@@ -78,6 +79,7 @@ const Navbar = () => {
                         <li><Link to="#projects">Projects</Link></li>
                         <li><Link to={resumeURL} className='active'>Resume</Link></li>
                         <li><Link to={linkedinURL}>LinkedIn</Link></li>
+                        <li><Link to={githubURL}>Github</Link></li>
                     </ul>
                 </nav>
             </header>

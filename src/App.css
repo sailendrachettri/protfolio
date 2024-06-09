@@ -275,6 +275,10 @@ main .landing-page p {
   padding: 0 1rem;
 }
 
+.heading-txt{
+  color: #9d0bf5;
+}
+
 .landing-page p {
   font-size: 24px;
 }

@@ -5,8 +5,8 @@ const Landingpage = () => {
   return (
     <>
       <div className="landing-page">
-            <h2>Fullstack Developer, Computer Programmer and Designer</h2>
-            <p>Technology enthusiast, learning whatever interest me the most.</p>
+            <h2><span className='heading-txt'>CODING WITH PASSION</span>, CREATING WITH PURPOSE</h2>
+            <p>Fullstack Developer, Computer Programmer and Vector Designer</p>
             <img src={heroImage} alt="homepage" />
         </div>
     </>
