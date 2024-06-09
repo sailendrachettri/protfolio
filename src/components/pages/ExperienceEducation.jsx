@@ -8,21 +8,8 @@ const ExperienceEducation = () => {
 
                 <div className='info-block'>
                     <div className='exp-edu'>
-                        <h2>Education</h2>
-
-                        <div className='info'>
-                            <div className='dot-line'>
-                                <p className='dot'>&#x2022;</p>
-                                {/* <p className='line'>&#124;</p> */}
-                            </div>
-
-                            <div className='bio'>
-                                <p className='year'>Oct 2023 - Present(July 2025)</p>
-                                <h3>Sikkim University</h3>
-                                <p className='summary'>Enrolled in Sikkim University's prestigious MCA program, I am acquiring advanced knowledge and skills in computer applications, programming, software development, and related areas.</p>
-                            </div>
-
-                        </div>
+                        <h2>Education</h2>                     
+                     
                         <div className='info'>
                             <div className='dot-line'>
                                 <p className='dot'>&#x2022;</p>
