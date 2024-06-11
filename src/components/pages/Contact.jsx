@@ -10,11 +10,11 @@ const Contact = () => {
             <div className='contact-box'>
                 <p>
                     <span class="material-symbols-outlined"> phone_in_talk </span>
-                    <span> <Link to="tel: 9832795894">Make a Call:</Link> +91 9832795894 </span>
+                    <span> Make a Call: <Link to="tel: 9832795894"> +91 9832795894</Link>  </span>
                 </p>
                 <p>
                     <span class="material-symbols-outlined"> dynamic_feed </span>
-                    <span><Link to="mailto:sailendra9083@gmail.com">Email Instead:</Link>sailendra9083@gmail.com</span>
+                    <span>Email Instead: <Link to="mailto:sailendra9083@gmail.com"> sailendra9083@gmail.com</Link></span>
                 </p>
             </div>
         </div>
