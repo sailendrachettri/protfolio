@@ -10,6 +10,7 @@ import Footer from './pages/Footer'
 import Carousel from './pages/Carousel'
 import ExperienceEducation from './pages/ExperienceEducation'
 import LoadingPage from '../Utils/LoadingPage'
+import Contact from './pages/Contact'
 
 const Homepage = () => {
     // HOOKS
@@ -37,6 +38,7 @@ const Homepage = () => {
                     <Techstack />
                     <ExperienceEducation />
                     <Projects />
+                    <Contact />
                     <Services />
                     <Carousel />
                     <Design />
