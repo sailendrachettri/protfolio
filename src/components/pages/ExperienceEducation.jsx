@@ -5,6 +5,7 @@ const ExperienceEducation = () => {
         <>
             <div className='exp-edu-section'>
                 <h1>Experience & Education</h1>
+                <p className="para">Showcasing my professional path and academic milestones</p>
 
                 <div className='info-block'>
                     <div className='exp-edu'>
