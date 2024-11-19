@@ -11,12 +11,16 @@ import img7 from '../../assets/carousel/img7.jpg';
 import img12 from '../../assets/carousel/img12.jpg';
 import img13 from '../../assets/carousel/img13.jpg';
 import img14 from '../../assets/carousel/img14.jpg';
+import img15 from '../../assets/carousel/img15.jpg';
+import img16 from '../../assets/carousel/img16.jpg';
+import img17 from '../../assets/carousel/img17.jpg';
+import img18 from '../../assets/carousel/img18.jpeg';
 
 // CODE IS WRITTEN USING CHATGPT 3.5 ..HEHE
 
 const Carousel = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [img1,img2,img3,img4,img5,img6, img7,img12,img13,img14];
+  const images = [img18, img1,img2,img3,img4,img15, img5,img6, img16, img7,img12,img13,img14, img17];
 
   useEffect(() => {
     const interval = setInterval(() => {
