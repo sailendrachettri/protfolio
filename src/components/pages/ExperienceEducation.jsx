@@ -47,11 +47,22 @@ const ExperienceEducation = () => {
                             </div>
 
                             <div className='bio'>
-                                <p className='year'>May 2023 - Present(Aug 2023)</p>
+                                <p className='year'>June 2024 - Present</p>
+                                <h3>Software Developer I @Bytesberry Technologies</h3>
+                                <p className='summary'>Skilled in full-stack development, including designing user interfaces, creating APIs, writing SQL queries, and setting up servers. Focused on building reliable and user-friendly applications.</p>
+                            </div>
+                        </div>
+
+                        <div className='info'>
+                            <div className='dot-line'>
+                                <p className='dot'>&#x2022;</p>
+                            </div>
+
+                            <div className='bio'>
+                                <p className='year'>May 2024 - Aug 2024</p>
                                 <h3>Backend Dev Intern @Enfocar IT Solution</h3>
                                 <p className='summary'>As a backend developer I am working with Node.js, Express, and other technologies to build the backend. I am gaining valuable experience in backend development, APIs, databases, and integrating the full stack.</p>
                             </div>
-
                         </div>
                         <div className='info'>
                             <div className='dot-line'>
